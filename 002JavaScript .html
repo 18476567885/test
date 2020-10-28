@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取星期</title>
+</head>
+<body>
+    <script>
+       var week=new Date().getDay();//获取星期
+       console.log(week);
+       var weekstr="";
+
+        switch(week){
+                case 0:
+                 weekstr="日";
+                break;
+                 case 1:
+                   weekstr="一";
+                 break;
+                  weekstr="二";
+                  break;
+                  weekstr="三";
+                  break;
+                  weekstr="四";
+                  break;
+                  weekstr="五";
+                  break;
+
+                  weekstr="六";
+                  break;
+                   }
+                   document.write("今天是星期"+weekstr)
+
+    </script>
+</body>
+</html>
